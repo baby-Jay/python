@@ -51,9 +51,10 @@ pipeline:
                       pip install  pytest
                       if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           platform:
-            arch: Amd64
             os: MacOS
+            arch: Amd64
           runtime:
-            spec: {}
             type: Docker
+            spec: {}
         type: CI
+        description: ""
