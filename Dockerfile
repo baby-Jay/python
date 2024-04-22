@@ -6,6 +6,9 @@ RUN mkdir -p /opt/app
 RUN mkdir -p /opt/app/wheeldir
 RUN mkdir -p /opt/app/src
 RUN pip install --upgrade pip setuptools wheel
+RUN whoami
+RUN pwd
+RUN ls
 #COPY wheeldir /opt/app/wheeldir
 # These are copied and installed first in order to take maximum advantage
 # of Docker layer caching (if enabled).
